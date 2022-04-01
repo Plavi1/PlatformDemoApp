@@ -1,0 +1,87 @@
+3/30/2022 7:10:03 PM	This log contains information about the import schema operation into project 'DatabaseDemo' on computer 'DESKTOP-MLH6E2F' by user 'PC'.
+3/30/2022 7:10:03 PM	Import of database schema has started.
+3/30/2022 7:10:13 PM	Gathering database credentials
+3/30/2022 7:10:13 PM	Gathering database options
+3/30/2022 7:10:13 PM	Gathering generic database scoped configuration option
+3/30/2022 7:10:13 PM	Gathering users
+3/30/2022 7:10:13 PM	Gathering roles
+3/30/2022 7:10:13 PM	Gathering application roles
+3/30/2022 7:10:13 PM	Gathering role memberships
+3/30/2022 7:10:13 PM	Gathering filegroups
+3/30/2022 7:10:13 PM	Gathering full-text catalogs
+3/30/2022 7:10:13 PM	Gathering assemblies
+3/30/2022 7:10:13 PM	Gathering certificates
+3/30/2022 7:10:13 PM	Gathering asymmetric keys
+3/30/2022 7:10:13 PM	Gathering symmetric keys
+3/30/2022 7:10:13 PM	Gathering encrypted symmetric keys
+3/30/2022 7:10:13 PM	Gathering schemas
+3/30/2022 7:10:13 PM	Gathering XML schema collections
+3/30/2022 7:10:13 PM	Gathering user-defined data types
+3/30/2022 7:10:13 PM	Gathering user-defined types
+3/30/2022 7:10:13 PM	Gathering table types
+3/30/2022 7:10:13 PM	Gathering unique keys for table types
+3/30/2022 7:10:13 PM	Gathering primary keys for table types
+3/30/2022 7:10:13 PM	Gathering indexes for table types
+3/30/2022 7:10:31 PM	Gathering check constraints for table types
+3/30/2022 7:10:31 PM	Gathering default constraints for table types
+3/30/2022 7:10:31 PM	Gathering partition functions
+3/30/2022 7:10:31 PM	Gathering partition schemes
+3/30/2022 7:10:31 PM	Gathering functions
+3/30/2022 7:10:31 PM	Gathering encrypted functions
+3/30/2022 7:10:31 PM	Gathering aggregates
+3/30/2022 7:10:31 PM	Gathering procedures
+3/30/2022 7:10:31 PM	Gathering encrypted procedures
+3/30/2022 7:10:31 PM	Gathering tables
+3/30/2022 7:11:21 PM	Gathering primary keys
+3/30/2022 7:11:21 PM	Gathering unique constraints
+3/30/2022 7:11:21 PM	Gathering foreign keys
+3/30/2022 7:11:21 PM	Gathering default constraints
+3/30/2022 7:11:21 PM	Gathering check constraints
+3/30/2022 7:11:21 PM	Gathering views
+3/30/2022 7:11:21 PM	Gathering encrypted views
+3/30/2022 7:11:21 PM	Gathering indexes
+3/30/2022 7:11:21 PM	Gathering statistics
+3/30/2022 7:11:21 PM	Gathering full-text index stoplists
+3/30/2022 7:11:21 PM	Gathering search property lists
+3/30/2022 7:11:21 PM	Gathering search properties
+3/30/2022 7:11:21 PM	Gathering full-text indexes
+3/30/2022 7:11:21 PM	Gathering column store indexes
+3/30/2022 7:11:21 PM	Gathering spatial indexes
+3/30/2022 7:11:21 PM	Gathering XML indexes
+3/30/2022 7:12:24 PM	Gathering Selective XML indexes
+3/30/2022 7:12:24 PM	Gathering encrypted triggers
+3/30/2022 7:12:24 PM	Gathering triggers
+3/30/2022 7:12:25 PM	Gathering encrypted and clr ddl triggers
+3/30/2022 7:12:25 PM	Gathering ddl triggers
+3/30/2022 7:12:25 PM	Creating edge constraints
+3/30/2022 7:12:25 PM	Gathering synonyms
+3/30/2022 7:13:09 PM	Gathering defaults
+3/30/2022 7:13:09 PM	Gathering data constraint uddt bindings
+3/30/2022 7:13:31 PM	Gathering rules
+3/30/2022 7:13:31 PM	Gathering data constraint uddt bindings
+3/30/2022 7:13:32 PM	Gathering message types
+3/30/2022 7:13:32 PM	Gathering queues
+3/30/2022 7:13:32 PM	Gathering contracts
+3/30/2022 7:13:32 PM	Gathering services
+3/30/2022 7:13:32 PM	Gathering event notifications
+3/30/2022 7:13:32 PM	Gathering remote service bindings
+3/30/2022 7:13:32 PM	Gathering broker priorities
+3/30/2022 7:13:32 PM	Gathering signatures
+3/30/2022 7:13:32 PM	Gathering data compression options
+3/30/2022 7:13:32 PM	Gathering sequence types
+3/30/2022 7:13:33 PM	Gathering security policies
+3/30/2022 7:13:33 PM	Gather column encryption keys
+3/30/2022 7:13:33 PM	Gathering column master keys
+3/30/2022 7:13:33 PM	Gathering external data sources
+3/30/2022 7:13:33 PM	Gathering external file formats
+3/30/2022 7:13:33 PM	Gathering external tables
+3/30/2022 7:13:33 PM	Gathering extended properties
+3/30/2022 7:13:35 PM	Gathering assemblies
+3/30/2022 7:13:36 PM	Gathering credentials
+3/30/2022 7:13:36 PM	Gathering logins
+3/30/2022 7:13:36 PM	Gathering server audits
+3/30/2022 7:13:36 PM	Scanning project for duplicate elements
+3/30/2022 7:13:36 PM	Finished duplicate element processing
+3/30/2022 7:13:37 PM	Finished importing database.
+3/30/2022 7:13:37 PM	A summary of the import was saved to the following location: C:\Users\PC\Desktop\Projekat Nivo1\WebApplicationDemo\DatabaseDemo\Import Schema Logs\DatabaseDemo_20220330051003.log
+3/30/2022 7:13:37 PM	Click Finish to continue...

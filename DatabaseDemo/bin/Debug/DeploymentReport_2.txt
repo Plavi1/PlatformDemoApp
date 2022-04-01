@@ -1,0 +1,34 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[spEvent_Update] (Procedure)
+       [dbo].[spReport_Delete] (Procedure)
+       [dbo].[spReport_GetAll] (Procedure)
+       [dbo].[spReport_GetReport] (Procedure)
+       [dbo].[spReport_Insert] (Procedure)
+       [dbo].[spReport_Update] (Procedure)
+       [dbo].[spTeam_Delete] (Procedure)
+       [dbo].[spTeam_GetAll] (Procedure)
+       [dbo].[spTeam_GetTeam] (Procedure)
+       [dbo].[spTeam_Insert] (Procedure)
+       [dbo].[spTeam_Update] (Procedure)
+       [dbo].[spTeaminChallenge_Delete] (Procedure)
+       [dbo].[spTeamInChallenge_Insert] (Procedure)
+       [dbo].[spTeamInEvent_Delete] (Procedure)
+       [dbo].[spTeamInEvent_Insert] (Procedure)
+       [dbo].[spVoteOnWaiting_Delete] (Procedure)
+       [dbo].[spVoteOnWaiting_GetAll] (Procedure)
+       [dbo].[spVoteOnWaiting_GetVote] (Procedure)
+       [dbo].[spVoteOnWaiting_Insert] (Procedure)
+       [dbo].[spVoteOnWaiting_Update] (Procedure)
+
+** Supporting actions

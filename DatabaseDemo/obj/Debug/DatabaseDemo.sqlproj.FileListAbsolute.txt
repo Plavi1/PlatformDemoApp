@@ -1,0 +1,10 @@
+C:\Users\PC\Desktop\Projekat Nivo1\WebApplicationDemo\DatabaseDemo\bin\Debug\DatabaseDemo.dacpac
+C:\Users\PC\Desktop\Projekat Nivo1\WebApplicationDemo\DatabaseDemo\bin\Debug\DatabaseDemo.dll
+C:\Users\PC\Desktop\Projekat Nivo1\WebApplicationDemo\DatabaseDemo\bin\Debug\DatabaseDemo.pdb
+C:\Users\PC\Desktop\Projekat Nivo1\WebApplicationDemo\DatabaseDemo\obj\Debug\DatabaseDemo.sqlproj.AssemblyReference.cache
+C:\Users\PC\Desktop\Projekat Nivo1\WebApplicationDemo\DatabaseDemo\obj\Debug\Model.xml
+C:\Users\PC\Desktop\Projekat Nivo1\WebApplicationDemo\DatabaseDemo\obj\Debug\refactor.xml
+C:\Users\PC\Desktop\Projekat Nivo1\WebApplicationDemo\DatabaseDemo\obj\Debug\postdeploy.sql
+C:\Users\PC\Desktop\Projekat Nivo1\WebApplicationDemo\DatabaseDemo\obj\Debug\predeploy.sql
+C:\Users\PC\Desktop\Projekat Nivo1\WebApplicationDemo\DatabaseDemo\obj\Debug\DatabaseDemo.dll
+C:\Users\PC\Desktop\Projekat Nivo1\WebApplicationDemo\DatabaseDemo\obj\Debug\DatabaseDemo.pdb

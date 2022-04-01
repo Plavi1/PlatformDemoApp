@@ -1,0 +1,12 @@
+C:\Users\PC\Desktop\Projekat Nivo1\WebApplicationDemo\DataAccessDemo\bin\Debug\net6.0\DataAccessDemo.deps.json
+C:\Users\PC\Desktop\Projekat Nivo1\WebApplicationDemo\DataAccessDemo\bin\Debug\net6.0\DataAccessDemo.dll
+C:\Users\PC\Desktop\Projekat Nivo1\WebApplicationDemo\DataAccessDemo\bin\Debug\net6.0\DataAccessDemo.pdb
+C:\Users\PC\Desktop\Projekat Nivo1\WebApplicationDemo\DataAccessDemo\obj\Debug\net6.0\DataAccessDemo.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\Projekat Nivo1\WebApplicationDemo\DataAccessDemo\obj\Debug\net6.0\DataAccessDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\Projekat Nivo1\WebApplicationDemo\DataAccessDemo\obj\Debug\net6.0\DataAccessDemo.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\Projekat Nivo1\WebApplicationDemo\DataAccessDemo\obj\Debug\net6.0\DataAccessDemo.AssemblyInfo.cs
+C:\Users\PC\Desktop\Projekat Nivo1\WebApplicationDemo\DataAccessDemo\obj\Debug\net6.0\DataAccessDemo.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\Projekat Nivo1\WebApplicationDemo\DataAccessDemo\obj\Debug\net6.0\DataAccessDemo.dll
+C:\Users\PC\Desktop\Projekat Nivo1\WebApplicationDemo\DataAccessDemo\obj\Debug\net6.0\refint\DataAccessDemo.dll
+C:\Users\PC\Desktop\Projekat Nivo1\WebApplicationDemo\DataAccessDemo\obj\Debug\net6.0\DataAccessDemo.pdb
+C:\Users\PC\Desktop\Projekat Nivo1\WebApplicationDemo\DataAccessDemo\obj\Debug\net6.0\ref\DataAccessDemo.dll
