@@ -4,10 +4,10 @@ namespace DataAccessDemo.Data
 {
     public interface IEventData
     {
-        Task DeleteEvent(string eventId);
-        Task<Event?> GetEvent(string eventId);
+        Task DeleteEvent(int eventId);
+        Task<Event?> GetEvent(int eventId);
         Task<IEnumerable<Event>> GetEvents();
-        Task InsertEvent(Event newEvent);
-        Task UpdateEvent(Event newEvent);
+        Task<Event> InsertEvent(Event newEvent);
+        Task<Event> UpdateEvent(Event newEvent);
     }
 }

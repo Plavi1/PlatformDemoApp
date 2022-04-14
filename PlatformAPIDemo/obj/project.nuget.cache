@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "A+tjJnD+gsexrcUJq2uGZEGelrGoQE8bcZRg2n34YMxljClTtibxD5JWg2uZgJtafS6sLlFCfU2hMZeD/HBG5Q==",
+  "dgSpecHash": "WCO8JdtxpbjZTI5TbEJ9D3D5Tli+gUqzAi/wN00/zI8YfSfBTADY8Bs9WdsYSne+NO0OSQNps8irSKD9r+5ysg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\PC\\Desktop\\DemoPlatforma\\PlatformAPIDemo\\PlatformAPIDemo.csproj",
+  "projectFilePath": "C:\\Users\\PC\\Desktop\\Projekat Nivo1\\WebApplicationDemo\\PlatformAPIDemo\\PlatformAPIDemo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",

@@ -4,10 +4,10 @@
 	@DateStart date,
 	@DateEnd date,
 	@NumberOfMatchesUntilTheEnd int, 
-	@NumberOfMathchesPlayed int,
+	@NumberOfMatchesPlayed int,
 	@IsEventFinished bit
 AS
 begin
 	insert into dbo.[tblEvent] (DateEnd, DateStart, IsEventFinished, NumberOfMatchesPlayed,NumberOfMatchesUntilTheEnd,NumberOfTeamsInEvent, Place)
-	values( @DateEnd, @DateStart, @IsEventFinished, @NumberOfMathchesPlayed, @NumberOfMatchesUntilTheEnd, @NumberOfTeamsInEvent, @Place)
+	values( @DateEnd, @DateStart, @IsEventFinished, @NumberOfMatchesPlayed, @NumberOfMatchesUntilTheEnd, @NumberOfTeamsInEvent, @Place)
 end

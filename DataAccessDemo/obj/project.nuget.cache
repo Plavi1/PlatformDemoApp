@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cB3dxdb44S0s+18dP9X3Dq6b6w9FJl14c976nX8Uxla+oZmdjZIlXeXVo6fTaLzvK5Lh4Z3kaxqfI9MXiGRIJg==",
+  "dgSpecHash": "0+5KZ0dWRY/6WqA5ApctzKEk2LktGAiYrSwG81lZggTwWbDZ+YGYtTdJcf1ABS2DchIz4bof9JTBE69uy71TFQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\PC\\Desktop\\DemoPlatforma\\DataAccessDemo\\DataAccessDemo.csproj",
+  "projectFilePath": "C:\\Users\\PC\\Desktop\\Projekat Nivo1\\WebApplicationDemo\\DataAccessDemo\\DataAccessDemo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",

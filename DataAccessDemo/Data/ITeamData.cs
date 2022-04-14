@@ -7,7 +7,7 @@ namespace DataAccessDemo.Data
         Task DeleteTeam(string teamId);
         Task<Team?> GetTeam(string teamId);
         Task<IEnumerable<Team>> GetTeams();
-        Task InsertTeam(Team team);
-        Task UpdateTeam(Team team);
+        Task<Team> InsertTeam(Team team);
+        Task<Team> UpdateTeam(Team team);
     }
 }

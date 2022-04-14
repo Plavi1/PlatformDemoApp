@@ -23,8 +23,9 @@ namespace DataAccessDemo.Data
             return result.FirstOrDefault();
         }
 
-        public Task InsertTeam(Team team) =>
-            _db.SaveData("dbo.spTeam_Insert", new
+        public async Task<Team> InsertTeam(Team team)
+        {
+            await _db.SaveData("dbo.spTeam_Insert", new
             {
                 team.TeamId,
                 team.TeamName,
@@ -37,13 +38,21 @@ namespace DataAccessDemo.Data
                 team.Player4,
                 team.DateOfRegistration,
                 team.Wins,
-                team.Losts,
+                team.Lost,
                 team.IsInTop5
             });
 
-        public Task UpdateTeam(Team team) =>
-            _db.SaveData("dbo.spTeam_Update", team);
+            return team;
 
+        }
+
+
+        public async Task<Team> UpdateTeam(Team team)
+        {
+            await _db.SaveData("dbo.spTeam_Update", team);
+
+            return team;
+        }
         public Task DeleteTeam(string teamId) =>
             _db.SaveData("dbo.spTeam_Delete", new { Id = teamId });
 

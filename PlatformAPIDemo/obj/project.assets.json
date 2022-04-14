@@ -811,11 +811,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PC\\Desktop\\DemoPlatforma\\PlatformAPIDemo\\PlatformAPIDemo.csproj",
+      "projectUniqueName": "C:\\Users\\PC\\Desktop\\Projekat Nivo1\\WebApplicationDemo\\PlatformAPIDemo\\PlatformAPIDemo.csproj",
       "projectName": "PlatformAPIDemo",
-      "projectPath": "C:\\Users\\PC\\Desktop\\DemoPlatforma\\PlatformAPIDemo\\PlatformAPIDemo.csproj",
+      "projectPath": "C:\\Users\\PC\\Desktop\\Projekat Nivo1\\WebApplicationDemo\\PlatformAPIDemo\\PlatformAPIDemo.csproj",
       "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PC\\Desktop\\DemoPlatforma\\PlatformAPIDemo\\obj\\",
+      "outputPath": "C:\\Users\\PC\\Desktop\\Projekat Nivo1\\WebApplicationDemo\\PlatformAPIDemo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -832,8 +832,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\PC\\Desktop\\DemoPlatforma\\DataAccessDemo\\DataAccessDemo.csproj": {
-              "projectPath": "C:\\Users\\PC\\Desktop\\DemoPlatforma\\DataAccessDemo\\DataAccessDemo.csproj"
+            "C:\\Users\\PC\\Desktop\\Projekat Nivo1\\WebApplicationDemo\\DataAccessDemo\\DataAccessDemo.csproj": {
+              "projectPath": "C:\\Users\\PC\\Desktop\\Projekat Nivo1\\WebApplicationDemo\\DataAccessDemo\\DataAccessDemo.csproj"
             }
           }
         }

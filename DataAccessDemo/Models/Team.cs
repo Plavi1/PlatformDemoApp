@@ -15,7 +15,7 @@ namespace DataAccessDemo.Models
         public string Player4 { get; set; }
         public DateTime DateOfRegistration { get; set; }  // Eject an error when i put DateOnly (IN API CALL)
         public int? Wins { get; set; }
-        public int? Losts { get; set; }
+        public int? Lost { get; set; }
         public bool IsInTop5 { get; set; }
     }
 }

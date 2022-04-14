@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PC\\Desktop\\DemoPlatforma\\DataAccessDemo\\DataAccessDemo.csproj": {}
+    "C:\\Users\\PC\\Desktop\\Projekat Nivo1\\WebApplicationDemo\\DataAccessDemo\\DataAccessDemo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PC\\Desktop\\DemoPlatforma\\DataAccessDemo\\DataAccessDemo.csproj": {
+    "C:\\Users\\PC\\Desktop\\Projekat Nivo1\\WebApplicationDemo\\DataAccessDemo\\DataAccessDemo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PC\\Desktop\\DemoPlatforma\\DataAccessDemo\\DataAccessDemo.csproj",
+        "projectUniqueName": "C:\\Users\\PC\\Desktop\\Projekat Nivo1\\WebApplicationDemo\\DataAccessDemo\\DataAccessDemo.csproj",
         "projectName": "DataAccessDemo",
-        "projectPath": "C:\\Users\\PC\\Desktop\\DemoPlatforma\\DataAccessDemo\\DataAccessDemo.csproj",
+        "projectPath": "C:\\Users\\PC\\Desktop\\Projekat Nivo1\\WebApplicationDemo\\DataAccessDemo\\DataAccessDemo.csproj",
         "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PC\\Desktop\\DemoPlatforma\\DataAccessDemo\\obj\\",
+        "outputPath": "C:\\Users\\PC\\Desktop\\Projekat Nivo1\\WebApplicationDemo\\DataAccessDemo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",

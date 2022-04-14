@@ -1,16 +1,16 @@
 ﻿CREATE PROCEDURE [dbo].[spEvent_Update]
-	@Id int,
+	@EventId int,
 	@Place nvarchar(50),
 	@NumberOfTeamsInEvent int,
 	@DateStart date,
 	@DateEnd date,
 	@NumberOfMatchesUntilTheEnd int, 
-	@NumberOfMathchesPlayed int,
+	@NumberOfMatchesPlayed int,
 	@IsEventFinished bit
 AS
 begin
   update dbo.[tblEvent]
-  set DateEnd = @DateEnd, DateStart = @DateStart, IsEventFinished = @IsEventFinished, NumberOfMatchesPlayed = @NumberOfMathchesPlayed,
+  set DateEnd = @DateEnd, DateStart = @DateStart, IsEventFinished = @IsEventFinished, NumberOfMatchesPlayed = @NumberOfMatchesPlayed,
   NumberOfMatchesUntilTheEnd = @NumberOfMatchesUntilTheEnd, NumberOfTeamsInEvent = @NumberOfTeamsInEvent, Place = @Place
-  where EventId = @Id;
+  where EventId = @EventId;
 end

@@ -20,7 +20,7 @@ namespace DataAccessDemo.Data
         public Task<IEnumerable<Event>> GetEvents() =>
            _db.LoadData<Event, dynamic>("dbo.spEvent_GetAll", new { });
 
-        public async Task<Event?> GetEvent(string eventId)
+        public async Task<Event?> GetEvent(int eventId)
         {
             var result = await _db.LoadData<Event, dynamic>(
                 "dbo.spEvent_GetEvent",
@@ -28,8 +28,9 @@ namespace DataAccessDemo.Data
             return result.FirstOrDefault();
         }
 
-        public Task InsertEvent(Event newEvent) =>
-            _db.SaveData("dbo.spEvent_Insert", new
+        public async Task<Event> InsertEvent(Event newEvent)
+        {
+            await _db.SaveData("dbo.spEvent_Insert", new
             {
                 newEvent.Place,
                 newEvent.NumberOfTeamsInEvent,
@@ -40,10 +41,17 @@ namespace DataAccessDemo.Data
                 newEvent.IsEventFinished
             });
 
-        public Task UpdateEvent(Event newEvent) =>
-            _db.SaveData("dbo.spEvent_Update", newEvent);
+            return newEvent;
+        }
 
-        public Task DeleteEvent(string eventId) =>
+        public async Task<Event> UpdateEvent(Event newEvent)
+        {
+            await _db.SaveData("dbo.spEvent_Update", newEvent);
+
+            return newEvent;
+        }
+
+        public Task DeleteEvent(int eventId) =>
             _db.SaveData("dbo.spEvent_Delete", new { Id = eventId });
     }
 }
