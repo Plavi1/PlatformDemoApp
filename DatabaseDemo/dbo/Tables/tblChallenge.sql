@@ -5,7 +5,7 @@
     [LocationOfTheBasketballCourt] NVARCHAR (50) NOT NULL,
     [PlaceOfTeams]                 NVARCHAR (50) NOT NULL,
     [NumberOfTimeOrDateChanged]    INT           NULL,
-    [IsChallengeComfirmed]         BIT           NULL,
+    [IsChallengeConfirmed]         BIT           NULL,
     [IsChallengeFinished]          BIT           NULL,
     [VotesChallenger]              INT           NULL,
     [VotesChallenged]              INT           NULL,

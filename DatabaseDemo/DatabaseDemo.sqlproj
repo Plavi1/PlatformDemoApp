@@ -99,11 +99,17 @@
     <Build Include="dbo\StoredProcedures\spTeamInEvent_Delete.sql" />
     <Build Include="dbo\StoredProcedures\spTeamInChallenge_Insert.sql" />
     <Build Include="dbo\StoredProcedures\spTeaminChallenge_Delete.sql" />
+    <Build Include="dbo\StoredProcedures\spTeamInEvent_GetAll.sql" />
+    <Build Include="dbo\StoredProcedures\spTeamInEvent_GetTeamInEvent.sql" />
+    <Build Include="dbo\StoredProcedures\spTeamInChallenge_GetAll.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Script.PostDeployment.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="DatabaseDemo.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="DatabaseDemo.refactorlog" />
   </ItemGroup>
 </Project>

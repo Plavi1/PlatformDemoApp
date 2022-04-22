@@ -5,6 +5,8 @@ namespace DataAccessDemo.Data
     public interface ITeamInEventData
     {
         Task DeleteTeamInEvent(string teamId);
-        Task InsertTeamInEvent(TeamInEvent teamInEvent);
+        Task<TeamInEvent> InsertTeamInEvent(TeamInEvent teamInEvent);
+        Task<TeamInEvent?> GetTeamInEvent(string teamId);
+        Task<IEnumerable<TeamInEvent>> GetAllTeamInEvent();
     }
 }

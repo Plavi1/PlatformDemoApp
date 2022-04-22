@@ -7,7 +7,7 @@ namespace DataAccessDemo.Data
         Task DeleteChallenge(string challengeId);
         Task<Challenge?> GetChallenge(string challengeId);
         Task<IEnumerable<Challenge>> GetChallenges();
-        Task InsertChallenge(Challenge challenge);
-        Task UpdateChallenge(Challenge challenge);
+        Task<Challenge> InsertChallenge(Challenge challenge);
+        Task<Challenge> UpdateChallenge(Challenge challenge);
     }
 }

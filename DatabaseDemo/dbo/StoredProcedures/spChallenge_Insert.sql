@@ -5,12 +5,12 @@
 	@LocationOfTheBasketballCourt nvarchar(50),
 	@PlaceOfTeams nvarchar(50),
 	@NumberOfTimeOrDateChanged int,
-	@IsChallengeComfirmed bit,
+	@IsChallengeConfirmed bit,
 	@IsChallengeFinished bit,
 	@VotesChallenger int,
 	@VotesChallenged int
 AS
 begin
-	insert into dbo.[tblChallenge] (ChallengeId,Date,Time,IsChallengeComfirmed,IsChallengeFinished,LocationOfTheBasketballCourt,NumberOfTimeOrDateChanged,PlaceOfTeams,VotesChallenged,VotesChallenger)
-	values(@ChallengeId, @Date, @Time, @IsChallengeComfirmed, @IsChallengeFinished, @LocationOfTheBasketballCourt, @NumberOfTimeOrDateChanged, @PlaceOfTeams, @VotesChallenged,@VotesChallenger)
+	insert into dbo.[tblChallenge] (ChallengeId,Date,Time,IsChallengeConfirmed,IsChallengeFinished,LocationOfTheBasketballCourt,NumberOfTimeOrDateChanged,PlaceOfTeams,VotesChallenged,VotesChallenger)
+	values(@ChallengeId, @Date, @Time, @IsChallengeConfirmed, @IsChallengeFinished, @LocationOfTheBasketballCourt, @NumberOfTimeOrDateChanged, @PlaceOfTeams, @VotesChallenged,@VotesChallenger)
 end

@@ -17,34 +17,46 @@ namespace DataAccessDemo.Data
             _db = db;
         }
 
-        public Task<IEnumerable<Challenge>> GetChallenges() =>
-            _db.LoadData<Challenge, dynamic>("dbo.spChallenge_GetAll", new { });
+        public Task<IEnumerable<Challenge>> GetChallenges()
+        {
+            var result = _db.LoadData<Challenge, dynamic>("dbo.spChallenge_GetAll", new { });
+
+            return result;
+        }
 
         public async Task<Challenge?> GetChallenge(string challengeId)
         {
             var result = await _db.LoadData<Challenge, dynamic>(
-                "dbo.spChallenge_GetTeam",
+                "dbo.spChallenge_GetChallenge",
                 new { Id = challengeId });
             return result.FirstOrDefault();
         }
 
-        public Task InsertChallenge(Challenge challenge) =>
-            _db.SaveData("dbo.spChallenge_Insert", new
+        public async Task<Challenge> InsertChallenge(Challenge challenge)
+        {
+            await _db.SaveData("dbo.spChallenge_Insert", new
             {
                 challenge.ChallengeId,
                 challenge.Time,
                 challenge.Date,
-                challenge.LocationOfTheBasketballlCourt,
+                challenge.LocationOfTheBasketballCourt,
                 challenge.PlaceOfTeams,
                 challenge.NumberOfTimeOrDateChanged,
-                challenge.isChallangeComfirmed,
+                challenge.IsChallengeConfirmed,
                 challenge.IsChallengeFinished,
                 challenge.VotesChallenger,
                 challenge.VotesChallenged
             });
 
-        public Task UpdateChallenge(Challenge challenge) =>
-            _db.SaveData("dbo.spChallenge_Update", challenge);
+            return challenge;
+        }
+
+        public async Task<Challenge> UpdateChallenge(Challenge challenge) 
+        {
+            await _db.SaveData("dbo.spChallenge_Update", challenge);
+
+            return challenge;
+        }
 
         public Task DeleteChallenge(string challengeId) =>
             _db.SaveData("dbo.spChallenge_Delete", new { Id = challengeId });

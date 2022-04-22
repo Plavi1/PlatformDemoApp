@@ -5,6 +5,6 @@ namespace DataAccessDemo.Data
     public interface ITeamInChallengeData
     {
         Task DeleteTeamInChallenge(string challengeId);
-        Task InsertTeamInChallenge(TeamInChallenge teamInChallenge);
+        Task<TeamInChallenge> InsertTeamInChallenge(TeamInChallenge teamInChallenge);
     }
 }

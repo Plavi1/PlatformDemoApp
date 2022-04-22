@@ -23,21 +23,29 @@ namespace DataAccessDemo.Data
         public async Task<VoteOnWaiting?> GetVoteOnWaiting(string teamId)
         {
             var result = await _db.LoadData<VoteOnWaiting, dynamic>(
-                "dbo.spVoteOnWaiting_GetTeam",
+                "dbo.spVoteOnWaiting_GetVote",
                 new { Id = teamId });
             return result.FirstOrDefault();
         }
 
-        public Task InsertVoteOnWaiting(VoteOnWaiting voteOnWaiting) =>
-            _db.SaveData("dbo.spVoteOnWaiting_Insert", new
+        public async Task<VoteOnWaiting> InsertVoteOnWaiting(VoteOnWaiting voteOnWaiting)
+        {
+            await _db.SaveData("dbo.spVoteOnWaiting_Insert", new
             {
                 voteOnWaiting.TeamId,
                 voteOnWaiting.ChallengeId,
                 voteOnWaiting.ExpiringDateForVotes
             });
 
-        public Task UpdateVoteOnWaiting(VoteOnWaiting voteOnWaiting) =>
-            _db.SaveData("dbo.spVoteOnWaiting_Update", voteOnWaiting);
+            return voteOnWaiting;
+        }
+
+        public async Task<VoteOnWaiting> UpdateVoteOnWaiting(VoteOnWaiting voteOnWaiting)
+        {
+            await _db.SaveData("dbo.spVoteOnWaiting_Update", voteOnWaiting);
+
+            return voteOnWaiting;
+        }
 
         public Task DeleteVoteOnWaiting(string teamId) =>
             _db.SaveData("dbo.spVoteOnWaiting_Delete", new { Id = teamId });

@@ -5,14 +5,14 @@
 	@LocationOfTheBasketballCourt nvarchar(50),
 	@PlaceOfTeams nvarchar(50),
 	@NumberOfTimeOrDateChanged int,
-	@IsChallengeComfirmed bit,
+	@IsChallengeConfirmed bit,
 	@IsChallengeFinished bit,
 	@VotesChallenger int,
 	@VotesChallenged int
 AS
 begin
    update dbo.[tblChallenge]
-   set ChallengeId = @ChallengeId, Date = @Date, Time = @Time, IsChallengeComfirmed = @IsChallengeComfirmed, IsChallengeFinished = @IsChallengeFinished,
+   set ChallengeId = @ChallengeId, Date = @Date, Time = @Time, IsChallengeConfirmed = @IsChallengeConfirmed, IsChallengeFinished = @IsChallengeFinished,
    LocationOfTheBasketballCourt = @LocationOfTheBasketballCourt, NumberOfTimeOrDateChanged = @NumberOfTimeOrDateChanged, PlaceOfTeams = @PlaceOfTeams,
    VotesChallenged = @VotesChallenged, VotesChallenger = @VotesChallenger
    where ChallengeId = @ChallengeId;

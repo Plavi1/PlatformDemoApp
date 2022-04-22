@@ -4,7 +4,7 @@ namespace PlatformAPIDemo.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class EventController : Controller
+    public class EventController : ControllerBase
     {
         private readonly IEventData eventData;
 

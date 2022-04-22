@@ -7,6 +7,6 @@ namespace DataAccessDemo.Models
         public int ReportId { get; set; }
         public string ReportedTeamId { get; set; }
         public string SenderTeamId { get; set; }
-        public string Message { get; set; }
+        public string ReportMessage { get; set; }
     }
 }

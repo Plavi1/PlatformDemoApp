@@ -17,14 +17,18 @@ namespace DataAccessDemo.Data
             _db = db;
         }
 
-        public Task InsertTeamInChallenge(TeamInChallenge teamInChallenge) =>
-            _db.SaveData("dbo.spTeamInChallenge_Insert", new
+        public async Task<TeamInChallenge> InsertTeamInChallenge(TeamInChallenge teamInChallenge)
+        {
+            await _db.SaveData("dbo.spTeamInChallenge_Insert", new
             {
                 teamInChallenge.ChallengeId,
                 teamInChallenge.ChallengerTeamId,
                 teamInChallenge.ChallengedTeamId,
                 teamInChallenge.EventId
             });
+
+            return teamInChallenge;
+        }
 
         public Task DeleteTeamInChallenge(string challengeId) =>
             _db.SaveData("dbo.spTeamInChallenge_Delete", new { ChallengeId = challengeId });

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="b154594b-d6f2-49d9-893e-ebb1fbd2089d" ChangeDateTime="04/22/2022 20:07:42">
+    <Property Name="ElementName" Value="[dbo].[tblChallenge].[IsChallengeComfirmed]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tblChallenge]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="IsChallengeConfirmed" />
+  </Operation>
+</Operations>

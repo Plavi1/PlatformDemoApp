@@ -534,8 +534,8 @@ end]]></Value>
 			<Property Name="BodyScript">
 				<Value><![CDATA[
 begin
-	insert into dbo.[tblChallenge] (ChallengeId,Date,Time,IsChallengeComfirmed,IsChallengeFinished,LocationOfTheBasketballCourt,NumberOfTimeOrDateChanged,PlaceOfTeams,VotesChallenged,VotesChallenger)
-	values(@ChallengeId, @Date, @Time, @IsChallengeComfirmed, @IsChallengeFinished, @LocationOfTheBasketballCourt, @NumberOfTimeOrDateChanged, @PlaceOfTeams, @VotesChallenged,@VotesChallenger)
+	insert into dbo.[tblChallenge] (ChallengeId,Date,Time,IsChallengeConfirmed,IsChallengeFinished,LocationOfTheBasketballCourt,NumberOfTimeOrDateChanged,PlaceOfTeams,VotesChallenged,VotesChallenger)
+	values(@ChallengeId, @Date, @Time, @IsChallengeConfirmed, @IsChallengeFinished, @LocationOfTheBasketballCourt, @NumberOfTimeOrDateChanged, @PlaceOfTeams, @VotesChallenged,@VotesChallenger)
 end]]></Value>
 			</Property>
 			<Property Name="IsAnsiNullsOn" Value="True" />
@@ -553,7 +553,7 @@ end]]></Value>
 					<References Name="[dbo].[tblChallenge].[Time]" />
 				</Entry>
 				<Entry>
-					<References Name="[dbo].[tblChallenge].[IsChallengeComfirmed]" />
+					<References Name="[dbo].[tblChallenge].[IsChallengeConfirmed]" />
 				</Entry>
 				<Entry>
 					<References Name="[dbo].[tblChallenge].[IsChallengeFinished]" />
@@ -583,7 +583,7 @@ end]]></Value>
 					<References Name="[dbo].[spChallenge_Insert].[@Time]" />
 				</Entry>
 				<Entry>
-					<References Name="[dbo].[spChallenge_Insert].[@IsChallengeComfirmed]" />
+					<References Name="[dbo].[spChallenge_Insert].[@IsChallengeConfirmed]" />
 				</Entry>
 				<Entry>
 					<References Name="[dbo].[spChallenge_Insert].[@IsChallengeFinished]" />
@@ -700,7 +700,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSubroutineParameter" Name="[dbo].[spChallenge_Insert].[@IsChallengeComfirmed]">
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[spChallenge_Insert].[@IsChallengeConfirmed]">
 						<Relationship Name="Type">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -769,7 +769,7 @@ end]]></Value>
 				<Property Name="Length" Value="719" />
 				<Property Name="StartLine" Value="1" />
 				<Property Name="StartColumn" Value="1" />
-				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[spChallenge_Insert]&#xD;&#xA;&#x9;@ChallengeId nvarchar(50),&#xD;&#xA;&#x9;@Time time,&#xD;&#xA;&#x9;@Date date,&#xD;&#xA;&#x9;@LocationOfTheBasketballCourt nvarchar(50),&#xD;&#xA;&#x9;@PlaceOfTeams nvarchar(50),&#xD;&#xA;&#x9;@NumberOfTimeOrDateChanged int,&#xD;&#xA;&#x9;@IsChallengeComfirmed bit,&#xD;&#xA;&#x9;@IsChallengeFinished bit,&#xD;&#xA;&#x9;@VotesChallenger int,&#xD;&#xA;&#x9;@VotesChallenged int&#xD;&#xA;AS" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[spChallenge_Insert]&#xD;&#xA;&#x9;@ChallengeId nvarchar(50),&#xD;&#xA;&#x9;@Time time,&#xD;&#xA;&#x9;@Date date,&#xD;&#xA;&#x9;@LocationOfTheBasketballCourt nvarchar(50),&#xD;&#xA;&#x9;@PlaceOfTeams nvarchar(50),&#xD;&#xA;&#x9;@NumberOfTimeOrDateChanged int,&#xD;&#xA;&#x9;@IsChallengeConfirmed bit,&#xD;&#xA;&#x9;@IsChallengeFinished bit,&#xD;&#xA;&#x9;@VotesChallenger int,&#xD;&#xA;&#x9;@VotesChallenged int&#xD;&#xA;AS" />
 			</Annotation>
 		</Element>
 		<Element Type="SqlProcedure" Name="[dbo].[spChallenge_Update]">
@@ -777,7 +777,7 @@ end]]></Value>
 				<Value><![CDATA[
 begin
    update dbo.[tblChallenge]
-   set ChallengeId = @ChallengeId, Date = @Date, Time = @Time, IsChallengeComfirmed = @IsChallengeComfirmed, IsChallengeFinished = @IsChallengeFinished,
+   set ChallengeId = @ChallengeId, Date = @Date, Time = @Time, IsChallengeConfirmed = @IsChallengeConfirmed, IsChallengeFinished = @IsChallengeFinished,
    LocationOfTheBasketballCourt = @LocationOfTheBasketballCourt, NumberOfTimeOrDateChanged = @NumberOfTimeOrDateChanged, PlaceOfTeams = @PlaceOfTeams,
    VotesChallenged = @VotesChallenged, VotesChallenger = @VotesChallenger
    where ChallengeId = @ChallengeId;
@@ -807,10 +807,10 @@ end]]></Value>
 					<References Name="[dbo].[spChallenge_Update].[@Time]" />
 				</Entry>
 				<Entry>
-					<References Name="[dbo].[tblChallenge].[IsChallengeComfirmed]" />
+					<References Name="[dbo].[tblChallenge].[IsChallengeConfirmed]" />
 				</Entry>
 				<Entry>
-					<References Name="[dbo].[spChallenge_Update].[@IsChallengeComfirmed]" />
+					<References Name="[dbo].[spChallenge_Update].[@IsChallengeConfirmed]" />
 				</Entry>
 				<Entry>
 					<References Name="[dbo].[tblChallenge].[IsChallengeFinished]" />
@@ -945,7 +945,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSubroutineParameter" Name="[dbo].[spChallenge_Update].[@IsChallengeComfirmed]">
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[spChallenge_Update].[@IsChallengeConfirmed]">
 						<Relationship Name="Type">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -1014,7 +1014,7 @@ end]]></Value>
 				<Property Name="Length" Value="782" />
 				<Property Name="StartLine" Value="1" />
 				<Property Name="StartColumn" Value="1" />
-				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[spChallenge_Update]&#xD;&#xA;    @ChallengeId nvarchar(50),&#xD;&#xA;&#x9;@Time time,&#xD;&#xA;&#x9;@Date date,&#xD;&#xA;&#x9;@LocationOfTheBasketballCourt nvarchar(50),&#xD;&#xA;&#x9;@PlaceOfTeams nvarchar(50),&#xD;&#xA;&#x9;@NumberOfTimeOrDateChanged int,&#xD;&#xA;&#x9;@IsChallengeComfirmed bit,&#xD;&#xA;&#x9;@IsChallengeFinished bit,&#xD;&#xA;&#x9;@VotesChallenger int,&#xD;&#xA;&#x9;@VotesChallenged int&#xD;&#xA;AS" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[spChallenge_Update]&#xD;&#xA;    @ChallengeId nvarchar(50),&#xD;&#xA;&#x9;@Time time,&#xD;&#xA;&#x9;@Date date,&#xD;&#xA;&#x9;@LocationOfTheBasketballCourt nvarchar(50),&#xD;&#xA;&#x9;@PlaceOfTeams nvarchar(50),&#xD;&#xA;&#x9;@NumberOfTimeOrDateChanged int,&#xD;&#xA;&#x9;@IsChallengeConfirmed bit,&#xD;&#xA;&#x9;@IsChallengeFinished bit,&#xD;&#xA;&#x9;@VotesChallenger int,&#xD;&#xA;&#x9;@VotesChallenged int&#xD;&#xA;AS" />
 			</Annotation>
 		</Element>
 		<Element Type="SqlProcedure" Name="[dbo].[spEvent_Delete]">
@@ -1148,7 +1148,7 @@ end]]></Value>
 				<Value><![CDATA[
 begin
 	insert into dbo.[tblEvent] (DateEnd, DateStart, IsEventFinished, NumberOfMatchesPlayed,NumberOfMatchesUntilTheEnd,NumberOfTeamsInEvent, Place)
-	values( @DateEnd, @DateStart, @IsEventFinished, @NumberOfMathchesPlayed, @NumberOfMatchesUntilTheEnd, @NumberOfTeamsInEvent, @Place)
+	values( @DateEnd, @DateStart, @IsEventFinished, @NumberOfMatchesPlayed, @NumberOfMatchesUntilTheEnd, @NumberOfTeamsInEvent, @Place)
 end]]></Value>
 			</Property>
 			<Property Name="IsAnsiNullsOn" Value="True" />
@@ -1187,7 +1187,7 @@ end]]></Value>
 					<References Name="[dbo].[spEvent_Insert].[@IsEventFinished]" />
 				</Entry>
 				<Entry>
-					<References Name="[dbo].[spEvent_Insert].[@NumberOfMathchesPlayed]" />
+					<References Name="[dbo].[spEvent_Insert].[@NumberOfMatchesPlayed]" />
 				</Entry>
 				<Entry>
 					<References Name="[dbo].[spEvent_Insert].[@NumberOfMatchesUntilTheEnd]" />
@@ -1277,7 +1277,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSubroutineParameter" Name="[dbo].[spEvent_Insert].[@NumberOfMathchesPlayed]">
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[spEvent_Insert].[@NumberOfMatchesPlayed]">
 						<Relationship Name="Type">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -1313,10 +1313,10 @@ end]]></Value>
 				</Entry>
 			</Relationship>
 			<Annotation Type="SysCommentsObjectAnnotation">
-				<Property Name="Length" Value="516" />
+				<Property Name="Length" Value="514" />
 				<Property Name="StartLine" Value="1" />
 				<Property Name="StartColumn" Value="1" />
-				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[spEvent_Insert]&#xD;&#xA;    @Place nvarchar(50),&#xD;&#xA;&#x9;@NumberOfTeamsInEvent int,&#xD;&#xA;&#x9;@DateStart date,&#xD;&#xA;&#x9;@DateEnd date,&#xD;&#xA;&#x9;@NumberOfMatchesUntilTheEnd int, &#xD;&#xA;&#x9;@NumberOfMathchesPlayed int,&#xD;&#xA;&#x9;@IsEventFinished bit&#xD;&#xA;AS" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[spEvent_Insert]&#xD;&#xA;    @Place nvarchar(50),&#xD;&#xA;&#x9;@NumberOfTeamsInEvent int,&#xD;&#xA;&#x9;@DateStart date,&#xD;&#xA;&#x9;@DateEnd date,&#xD;&#xA;&#x9;@NumberOfMatchesUntilTheEnd int, &#xD;&#xA;&#x9;@NumberOfMatchesPlayed int,&#xD;&#xA;&#x9;@IsEventFinished bit&#xD;&#xA;AS" />
 			</Annotation>
 		</Element>
 		<Element Type="SqlProcedure" Name="[dbo].[spEvent_Update]">
@@ -1324,9 +1324,9 @@ end]]></Value>
 				<Value><![CDATA[
 begin
   update dbo.[tblEvent]
-  set DateEnd = @DateEnd, DateStart = @DateStart, IsEventFinished = @IsEventFinished, NumberOfMatchesPlayed = @NumberOfMathchesPlayed,
+  set DateEnd = @DateEnd, DateStart = @DateStart, IsEventFinished = @IsEventFinished, NumberOfMatchesPlayed = @NumberOfMatchesPlayed,
   NumberOfMatchesUntilTheEnd = @NumberOfMatchesUntilTheEnd, NumberOfTeamsInEvent = @NumberOfTeamsInEvent, Place = @Place
-  where EventId = @Id;
+  where EventId = @EventId;
 end]]></Value>
 			</Property>
 			<Property Name="IsAnsiNullsOn" Value="True" />
@@ -1356,7 +1356,7 @@ end]]></Value>
 					<References Name="[dbo].[tblEvent].[NumberOfMatchesPlayed]" />
 				</Entry>
 				<Entry>
-					<References Name="[dbo].[spEvent_Update].[@NumberOfMathchesPlayed]" />
+					<References Name="[dbo].[spEvent_Update].[@NumberOfMatchesPlayed]" />
 				</Entry>
 				<Entry>
 					<References Name="[dbo].[tblEvent].[NumberOfMatchesUntilTheEnd]" />
@@ -1380,12 +1380,12 @@ end]]></Value>
 					<References Name="[dbo].[tblEvent].[EventId]" />
 				</Entry>
 				<Entry>
-					<References Name="[dbo].[spEvent_Update].[@Id]" />
+					<References Name="[dbo].[spEvent_Update].[@EventId]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="Parameters">
 				<Entry>
-					<Element Type="SqlSubroutineParameter" Name="[dbo].[spEvent_Update].[@Id]">
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[spEvent_Update].[@EventId]">
 						<Relationship Name="Type">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -1476,7 +1476,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSubroutineParameter" Name="[dbo].[spEvent_Update].[@NumberOfMathchesPlayed]">
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[spEvent_Update].[@NumberOfMatchesPlayed]">
 						<Relationship Name="Type">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -1512,10 +1512,10 @@ end]]></Value>
 				</Entry>
 			</Relationship>
 			<Annotation Type="SysCommentsObjectAnnotation">
-				<Property Name="Length" Value="551" />
+				<Property Name="Length" Value="559" />
 				<Property Name="StartLine" Value="1" />
 				<Property Name="StartColumn" Value="1" />
-				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[spEvent_Update]&#xD;&#xA;&#x9;@Id int,&#xD;&#xA;&#x9;@Place nvarchar(50),&#xD;&#xA;&#x9;@NumberOfTeamsInEvent int,&#xD;&#xA;&#x9;@DateStart date,&#xD;&#xA;&#x9;@DateEnd date,&#xD;&#xA;&#x9;@NumberOfMatchesUntilTheEnd int, &#xD;&#xA;&#x9;@NumberOfMathchesPlayed int,&#xD;&#xA;&#x9;@IsEventFinished bit&#xD;&#xA;AS" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[spEvent_Update]&#xD;&#xA;&#x9;@EventId int,&#xD;&#xA;&#x9;@Place nvarchar(50),&#xD;&#xA;&#x9;@NumberOfTeamsInEvent int,&#xD;&#xA;&#x9;@DateStart date,&#xD;&#xA;&#x9;@DateEnd date,&#xD;&#xA;&#x9;@NumberOfMatchesUntilTheEnd int, &#xD;&#xA;&#x9;@NumberOfMatchesPlayed int,&#xD;&#xA;&#x9;@IsEventFinished bit&#xD;&#xA;AS" />
 			</Annotation>
 		</Element>
 		<Element Type="SqlProcedure" Name="[dbo].[spReport_Delete]">
@@ -1649,7 +1649,7 @@ end]]></Value>
 				<Value><![CDATA[
 begin
 	insert into dbo.[tblReport] (ReportedTeamId, SenderTeamId, ReportMessage)
-	values (@ReportTeamId, @SenderTeamId, @ReportMessage)
+	values (@ReportedTeamId, @SenderTeamId, @ReportMessage)
 end]]></Value>
 			</Property>
 			<Property Name="IsAnsiNullsOn" Value="True" />
@@ -1667,7 +1667,7 @@ end]]></Value>
 					<References Name="[dbo].[tblReport].[ReportMessage]" />
 				</Entry>
 				<Entry>
-					<References Name="[dbo].[spReport_Insert].[@ReportTeamId]" />
+					<References Name="[dbo].[spReport_Insert].[@ReportedTeamId]" />
 				</Entry>
 				<Entry>
 					<References Name="[dbo].[spReport_Insert].[@SenderTeamId]" />
@@ -1678,7 +1678,7 @@ end]]></Value>
 			</Relationship>
 			<Relationship Name="Parameters">
 				<Entry>
-					<Element Type="SqlSubroutineParameter" Name="[dbo].[spReport_Insert].[@ReportTeamId]">
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[spReport_Insert].[@ReportedTeamId]">
 						<Relationship Name="Type">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -1732,10 +1732,10 @@ end]]></Value>
 				</Entry>
 			</Relationship>
 			<Annotation Type="SysCommentsObjectAnnotation">
-				<Property Name="Length" Value="279" />
+				<Property Name="Length" Value="283" />
 				<Property Name="StartLine" Value="1" />
 				<Property Name="StartColumn" Value="1" />
-				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[spReport_Insert]&#xD;&#xA;&#x9;@ReportTeamId nvarchar(50),&#xD;&#xA;&#x9;@SenderTeamId nvarchar(50),&#xD;&#xA;&#x9;@ReportMessage nvarchar(250)&#xD;&#xA;AS" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[spReport_Insert]&#xD;&#xA;&#x9;@ReportedTeamId nvarchar(50),&#xD;&#xA;&#x9;@SenderTeamId nvarchar(50),&#xD;&#xA;&#x9;@ReportMessage nvarchar(250)&#xD;&#xA;AS" />
 			</Annotation>
 		</Element>
 		<Element Type="SqlProcedure" Name="[dbo].[spReport_Update]">
@@ -1743,8 +1743,8 @@ end]]></Value>
 				<Value><![CDATA[
 begin
 	update dbo.[tblReport]
-	set ReportedTeamId = @ReportTeamId, SenderTeamId = @SenderTeamId, ReportMessage = @ReportMessage
-	where ReportId = @Id;
+	set ReportedTeamId = @ReportedTeamId, SenderTeamId = @SenderTeamId, ReportMessage = @ReportMessage
+	where ReportId = @ReportId;
 end]]></Value>
 			</Property>
 			<Property Name="IsAnsiNullsOn" Value="True" />
@@ -1756,7 +1756,7 @@ end]]></Value>
 					<References Name="[dbo].[tblReport].[ReportedTeamId]" />
 				</Entry>
 				<Entry>
-					<References Name="[dbo].[spReport_Update].[@ReportTeamId]" />
+					<References Name="[dbo].[spReport_Update].[@ReportedTeamId]" />
 				</Entry>
 				<Entry>
 					<References Name="[dbo].[tblReport].[SenderTeamId]" />
@@ -1774,12 +1774,12 @@ end]]></Value>
 					<References Name="[dbo].[tblReport].[ReportId]" />
 				</Entry>
 				<Entry>
-					<References Name="[dbo].[spReport_Update].[@Id]" />
+					<References Name="[dbo].[spReport_Update].[@ReportId]" />
 				</Entry>
 			</Relationship>
 			<Relationship Name="Parameters">
 				<Entry>
-					<Element Type="SqlSubroutineParameter" Name="[dbo].[spReport_Update].[@Id]">
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[spReport_Update].[@ReportId]">
 						<Relationship Name="Type">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -1794,7 +1794,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSubroutineParameter" Name="[dbo].[spReport_Update].[@ReportTeamId]">
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[spReport_Update].[@ReportedTeamId]">
 						<Relationship Name="Type">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -1848,10 +1848,10 @@ end]]></Value>
 				</Entry>
 			</Relationship>
 			<Annotation Type="SysCommentsObjectAnnotation">
-				<Property Name="Length" Value="306" />
+				<Property Name="Length" Value="322" />
 				<Property Name="StartLine" Value="1" />
 				<Property Name="StartColumn" Value="1" />
-				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[spReport_Update]&#xD;&#xA;&#x9;@Id int,&#xD;&#xA;&#x9;@ReportTeamId nvarchar(50),&#xD;&#xA;&#x9;@SenderTeamId nvarchar(50),&#xD;&#xA;&#x9;@ReportMessage nvarchar(250)&#xD;&#xA;AS" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[spReport_Update]&#xD;&#xA;&#x9;@ReportId int,&#xD;&#xA;&#x9;@ReportedTeamId nvarchar(50),&#xD;&#xA;&#x9;@SenderTeamId nvarchar(50),&#xD;&#xA;&#x9;@ReportMessage nvarchar(250)&#xD;&#xA;AS" />
 			</Annotation>
 		</Element>
 		<Element Type="SqlProcedure" Name="[dbo].[spTeam_Delete]">
@@ -2648,6 +2648,32 @@ end]]></Value>
 				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[spTeaminChallenge_Delete]&#xD;&#xA;&#x9;@ChallengeId nvarchar(50)&#xD;&#xA;AS" />
 			</Annotation>
 		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[spTeamInChallenge_GetAll]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+Begin
+	SELECT *
+	FROM dbo.[tblTeamInChallenge];
+End]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[tblTeamInChallenge]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="109" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[spTeamInChallenge_GetAll]&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
 		<Element Type="SqlProcedure" Name="[dbo].[spTeamInChallenge_Insert]">
 			<Property Name="BodyScript">
 				<Value><![CDATA[
@@ -2812,6 +2838,83 @@ end]]></Value>
 				<Property Name="StartLine" Value="1" />
 				<Property Name="StartColumn" Value="1" />
 				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[spTeamInEvent_Delete]&#xD;&#xA;&#x9;@TeamId nvarchar(50)&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[spTeamInEvent_GetAll]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+BEGIN
+	SELECT * 
+	FROM dbo.[tblTeamInEvent];
+END]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[tblTeamInEvent]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="102" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[spTeamInEvent_GetAll]&#xD;&#xA;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="SqlProcedure" Name="[dbo].[spTeamInEvent_GetTeamInEvent]">
+			<Property Name="BodyScript">
+				<Value><![CDATA[
+begin 
+	SELECT *
+	from dbo.[tblTeamInEvent]
+	where TeamId = @Id;
+end]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="BodyDependencies">
+				<Entry>
+					<References Name="[dbo].[tblTeamInEvent]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tblTeamInEvent].[TeamId]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[spTeamInEvent_GetTeamInEvent].[@Id]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Parameters">
+				<Entry>
+					<Element Type="SqlSubroutineParameter" Name="[dbo].[spTeamInEvent_GetTeamInEvent].[@Id]">
+						<Relationship Name="Type">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="150" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE PROCEDURE [dbo].[spTeamInEvent_GetTeamInEvent]&#xD;&#xA;&#x9;@Id nvarchar(50)&#xD;&#xA;AS" />
 			</Annotation>
 		</Element>
 		<Element Type="SqlProcedure" Name="[dbo].[spTeamInEvent_Insert]">
@@ -3303,7 +3406,7 @@ end]]></Value>
 					</Element>
 				</Entry>
 				<Entry>
-					<Element Type="SqlSimpleColumn" Name="[dbo].[tblChallenge].[IsChallengeComfirmed]">
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tblChallenge].[IsChallengeConfirmed]">
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">

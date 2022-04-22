@@ -7,7 +7,7 @@ namespace DataAccessDemo.Data
         Task DeleteVoteOnWaiting(string teamId);
         Task<VoteOnWaiting?> GetVoteOnWaiting(string teamId);
         Task<IEnumerable<VoteOnWaiting>> GetVotesOnWaiting();
-        Task InsertVoteOnWaiting(VoteOnWaiting voteOnWaiting);
-        Task UpdateVoteOnWaiting(VoteOnWaiting voteOnWaiting);
+        Task<VoteOnWaiting> InsertVoteOnWaiting(VoteOnWaiting voteOnWaiting);
+        Task<VoteOnWaiting> UpdateVoteOnWaiting(VoteOnWaiting voteOnWaiting);
     }
 }

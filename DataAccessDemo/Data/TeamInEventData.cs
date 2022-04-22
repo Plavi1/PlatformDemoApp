@@ -17,14 +17,29 @@ namespace DataAccessDemo.Data
             _db = db;
         }
 
-        public Task InsertTeamInEvent(TeamInEvent teamInEvent) =>
-            _db.SaveData("dbo.spTeamInEvent_Insert", new
+        public async Task<TeamInEvent> InsertTeamInEvent(TeamInEvent teamInEvent)
+        {
+            await _db.SaveData("dbo.spTeamInEvent_Insert", new
             {
                 teamInEvent.EventId,
                 teamInEvent.TeamId
             });
 
+            return teamInEvent;
+        }
+
         public Task DeleteTeamInEvent(string teamId) =>
             _db.SaveData("dbo.spTeamInEvent_Delete", new { TeamId = teamId });
+
+        public async Task<TeamInEvent?> GetTeamInEvent(string teamId)
+        {
+            var result = await _db.LoadData<TeamInEvent, dynamic>(
+                "dbo.spTeamInEvent_GetTeamInEvent",
+                new { Id = teamId });
+            return result.FirstOrDefault();
+        }
+
+        public Task<IEnumerable<TeamInEvent>> GetAllTeamInEvent() =>
+            _db.LoadData<TeamInEvent, dynamic>("dbo.spTeamInEvent_GetAll", new { });
     }
 }
